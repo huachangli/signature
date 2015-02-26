@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 
         qdSignaturePad = (QDSignaturePad) findViewById(R.id.signature_pad);
         signList=qdSignaturePad.getSignList();
-        qdSignaturePad.setOnSignedListener(new SignaturePad.OnSignedListener() {
+        qdSignaturePad.setOnSignedListener(new QDSignaturePad.OnSignedListener() {
             @Override
             public void onSigned() {
                 mSaveButton.setEnabled(true);
